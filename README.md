@@ -1,4 +1,4 @@
-# HydraPWK Defaults
+# NetHydra Defaults
 
-This package/source containt standard configuration of HydraPWK
+This package/source containt standard configuration of NetHydra
 
