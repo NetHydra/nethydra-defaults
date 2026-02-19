@@ -5,7 +5,7 @@
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
     "Homepage": {
-      "URL": "file:///usr/share/hydrapwk-defaults/homepage/homepage.html",
+      "URL": "file:///usr/share/nethydra-defaults/web/homepage.html",
       "Locked": false,
       "StartPage": "homepage"
     },
@@ -22,6 +22,12 @@
       "Pocket": false,
       "Snippets": false,
       "Locked": false
+    },
+    "Preferences": {
+      "toolkit.legacyUserProfileCustomizations.stylesheets": {
+        "Value": true,
+        "Status": "locked"
+      }
     }
   }
 }
