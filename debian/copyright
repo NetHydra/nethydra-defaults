@@ -1,0 +1,23 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nethydra-defaults
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     README.md
+           firefox/etc/nethydra.js
+           firefox/lib/mozilla.cfg
+           firefox/share/distribution/common/chrome/userChrome.css
+           firefox/share/distribution/common/chrome/userContent.css
+           firefox/share/distribution/distribution.ini
+           firefox/share/distribution/policies.json
+           service-to-disable
+           share/bin/helper-disable-service.sh
+           skel/bashrc
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.

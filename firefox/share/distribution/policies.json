@@ -4,11 +4,6 @@
     "NoDefaultBookmarks": true,
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
-    "Homepage": {
-      "URL": "file:///usr/share/nethydra-defaults/web/homepage.html",
-      "Locked": false,
-      "StartPage": "homepage"
-    },
     "DisableTelemetry": true,
     "NetworkPrediction": false,
     "DNSOverHTTPS": {

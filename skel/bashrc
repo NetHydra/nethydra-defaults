@@ -8,6 +8,7 @@ case $- in
       *) return;;
 esac
 
+PATH=/usr/sbin/:$PATH
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -56,16 +57,24 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-st_color='\[\033[1;35m\]'
-st_bold='\[\033[1;38;5;200m\]'
-line_color='\[\033[;35m\]'
-dir_color='\[\033[0;32m\]'
-normal_color='\[\033[0;0m\]'
+st_color='\[\033[;32m\]'
+#st_bold='\[\033[1;33;5;200m\]'
+st_bold='\[\033[1;34m\]'
+line_color='\[\033[32m\]'
+skull_emoji='@'
+dir_color='\[\033[1;0m\]'
+ip_color='\[\033[1;0m\]'
+nhshell_color='\[\033[1;34m\]'
+get_ip() {
+    ip=$(ip -4 addr show wlp2s0 | awk '/inet /{print $2}' | cut -d/ -f1)
+    echo "${ip:-no-connection}"
+}
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}'$st_color'\u@\h'$normal_color':'$dir_color'\w'$normal_color'\$ '
+    # PS1=$line_color'\n──['$ip_color'$(get_ip)\[\033[0m\]'$line_color']─${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)'$st_color')}'$st_color'('$st_bold'\u'$skull_emoji'NetHydra-Express'$st_color')─['$dir_color'\w\e[0m'$st_color']\n'$line_color'└─── '$st_bold'\$\[\033[0m\] '
+    PS1=$line_color'\n──${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)'$st_color')}'$st_color'('$st_bold'\u'$skull_emoji'NetHydra-Express'$st_color')─['$dir_color'\w\e[0m'$st_color']\n'$line_color'└─── '$nhshell_color'\$\[\033[0m\] '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[0;31m]\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
 unset st_color

@@ -1,0 +1,7 @@
+#!/bin/env bash
+
+set -e
+
+chmod +x /usr/share/nethydra-defaults/bin/*
+exec /usr/share/nethydra-defaults/bin/helper-disable-service.sh
+cp /usr/share/nethydra-defaults/skel/bashrc /etc/skel/.bashrc

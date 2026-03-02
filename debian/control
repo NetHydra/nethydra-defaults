@@ -1,0 +1,16 @@
+Source: nethydra-defaults
+Section: unknown
+Priority: optional
+Maintainer: Joe <joe@rstrike.my.id>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://gitlab.com/nethydra/packages/nethydra-defaults
+Rules-Requires-Root: no
+Vcs-Git: https://gitlab.com/nethydra/packages/nethydra-defaults.git
+Vcs-Browser: https://gitlab.com/nethydra/packages/nethydra-defaults
+
+Package: nethydra-defaults
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: NetHydra default configuration

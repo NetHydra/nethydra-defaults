@@ -1,0 +1,6 @@
+nethydra-defaults (1.0-nethydra1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Joe <joe@rstrike.my.id>  Mon, 02 Mar 2026 10:27:51 -0500
