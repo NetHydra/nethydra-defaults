@@ -1,5 +1,5 @@
 firefox/etc/* etc/firefox-esr/
-firefox/lib/* usr/lib/firefox-esr/
+firefox/lib/* lib/firefox-esr/
 firefox/share/* usr/share/firefox-esr/
 skel usr/share/nethydra-defaults/
 service-to-disable usr/share/nethydra-defaults/
