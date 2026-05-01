@@ -1,3 +1,9 @@
+nethydra-defaults (2.0-nethydra1) UNRELEASED; urgency=low
+
+  * Update mozila.cfg
+
+ -- Joe <joe@rstrike.my.id>  Fri, 01 May 2026 07:31:00 +0700
+
 nethydra-defaults (1.0-nethydra1) UNRELEASED; urgency=low
 
   * Initial release. Closes: #nnnn
