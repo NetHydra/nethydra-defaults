@@ -1,4 +1,4 @@
-nethydra-defaults (2.0-nethydra1) UNRELEASED; urgency=low
+nethydra-defaults (2.0-nethydra1) sana; urgency=low
 
   * Update mozila.cfg
 
