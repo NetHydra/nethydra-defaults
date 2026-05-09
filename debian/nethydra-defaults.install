@@ -4,3 +4,4 @@ firefox/share/* usr/share/firefox-esr/
 skel usr/share/nethydra-defaults/
 service-to-disable usr/share/nethydra-defaults/
 share/bin usr/share/nethydra-defaults/
+firefox/usr/lib/autoconfig.js usr/lib/firefox-esr/defaults/pref/
